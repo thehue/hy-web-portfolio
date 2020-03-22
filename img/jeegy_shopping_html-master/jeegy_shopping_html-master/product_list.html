@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>상품리스트</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="./swiper.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="top">
+      <header class="page-top">
+        <div class="header-wrapper">
+          <div class="header-hamburger">
+            <img src="icons/hamburger.png" />
+          </div>
+          <div class="header-title">
+            <img src="icons/j-shop.png" />
+          </div>
+          <div class="header-search">
+            <img src="icons/search.png" />
+          </div>
+        </div>
+      </header>
+      <!-- 카테고리 -->
+      <div class="middle-nav-container">
+        <div class="middle-nav-wrapper">
+          <div class="middle-nav-prev-ico">
+            <img src="./icons/ico-header-prv.png" />
+          </div>
+          <div class="middle-nav-title">
+            <p>카테고리</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-container">
+        <ul class="swiper-wrapper tabs">
+          <li class="swiper-slide"><a href="#">안장가방</a></li>
+          <li class="swiper-slide active"><a href="#">패니어가방</a></li>
+          <li class="swiper-slide"><a href="#">탑튜브가방</a></li>
+          <li class="swiper-slide"><a href="#">핸들가방</a></li>
+          <li class="swiper-slide"><a href="#">백팩</a></li>
+          <li class="swiper-slide"><a href="#">여행 악세서리</a></li>
+          <li class="swiper-slide"><a href="#">속도계</a></li>
+          <li class="swiper-slide"><a href="#">도난방지기</a></li>
+          <li class="swiper-slide"><a href="#">전미등/후미등</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- 카테고리 별 바뀌어야 하는 내용 -->
+    <div class="content-container">
+      <div class="swiper-container-2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <!-- best ico-->
+            <div style="position:relative; width: 100%">
+              <img
+                src="icons/ico-best.png"
+                style="position: absolute; left: 40px; top: 10px;"
+              />
+            </div>
+            <div class="product-img">
+              <img src="images/ex1.jpg" />
+            </div>
+            <div class="product-title">
+              NEWBOLER 27리터 블랙 방수 패니어 가방
+            </div>
+            <p class="product-price">38,400원</p>
+          </div>
+          <div class="swiper-slide">
+            <!-- best ico-->
+            <div style="position:relative; width: 100%">
+              <img
+                src="icons/ico-best.png"
+                style="position: absolute; left: 40px; top: 10px;"
+              />
+            </div>
+            <div class="product-img">
+              <img src="images/ex2.jpg" />
+            </div>
+            <div class="product-title">
+              디바이크 디빅 WEST BIKING 패니어 가방
+            </div>
+            <p class="product-price">25,220원</p>
+          </div>
+          <div class="swiper-slide">
+            <!-- best ico-->
+            <div style="position:relative; width: 100%">
+              <img
+                src="icons/ico-best.png"
+                style="position: absolute; left: 40px; top: 10px;"
+              />
+            </div>
+            <div class="product-img">
+              <img src="images/ex3.jpg" />
+            </div>
+            <div class="product-title">
+              이베라 16 방수 패니어백 IB-BA20 PakRak
+            </div>
+            <p class="product-price">85,560원</p>
+          </div>
+        </div>
+        <!-- Add Pagination-->
+        <div class="swiper-pagination my-pagination"></div>
+      </div>
+      <section>
+        <div class="select-container">
+          <select class="select-box-style">
+            <option value="0">가격낮은순</option>
+            <option value="1">상품명순</option>
+          </select>
+        </div>
+        <!-- 사진 & 가격 -->
+        <div class="product-lst-container">
+          <ul class="product-lst">
+            <li class="product-cell">
+              <div class="box">
+                <div class="thumbnail">
+                  <a href="#">
+                    <div class="thumbnail-trans-wrapper">
+                      <img alt="스텔스 져지(실버)" src="images/prodt-2.png" />
+                    </div>
+                  </a>
+                </div>
+                <div class="description">
+                  <ul class="spec">
+                    <li class="brand">
+                      [아덴바이크]
+                    </li>
+                    <li class="name">
+                      <!--해당 상품 detail url-->
+                      <a href="#">
+                        긴거테스트 두줄두줄두줄 ㄷㅈㄷㅈㄷㅈㄷ
+                      </a>
+                    </li>
+                    <li class="price">
+                      <div><span>52500</span>원</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="product-cell">
+              <div class="box">
+                <div class="thumbnail">
+                  <a href="#">
+                    <div class="thumbnail-trans-wrapper">
+                      <img alt="스텔스 져지(실버)" src="images/prdt-3.png" />
+                    </div>
+                  </a>
+                </div>
+                <div class="description">
+                  <ul class="spec">
+                    <li class="brand">
+                      [아덴바이크]
+                    </li>
+                    <li class="name">
+                      <!--해당 상품 detail url-->
+                      <a href="#">
+                        스텔스 져지(실버)
+                      </a>
+                    </li>
+                    <li class="price">
+                      <div><span>52500</span>원</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="product-cell">
+              <div class="box">
+                <div class="thumbnail">
+                  <a href="#">
+                    <div class="thumbnail-trans-wrapper">
+                      <img alt="스텔스 져지(실버)" src="images/prdt-4.png" />
+                    </div>
+                  </a>
+                </div>
+                <div class="description">
+                  <ul class="spec">
+                    <li class="brand">
+                      [아덴바이크]
+                    </li>
+                    <li class="name">
+                      <!--해당 상품 detail url-->
+                      <a href="#">
+                        sdfsffffffffffffffffffffffsdfsdfsfsfsdfsf
+                      </a>
+                    </li>
+                    <li class="price">
+                      <div><span>52500</span>원</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="product-cell">
+              <div class="box">
+                <div class="thumbnail">
+                  <a href="#">
+                    <div class="thumbnail-trans-wrapper">
+                      <img alt="스텔스 져지(실버)" src="images/prdt.png" />
+                    </div>
+                  </a>
+                </div>
+                <div class="description">
+                  <ul class="spec">
+                    <li class="brand">
+                      [아덴바이크]
+                    </li>
+                    <li class="name">
+                      <!--해당 상품 detail url-->
+                      <a href="#">
+                        스텔스 져지(실버)
+                      </a>
+                    </li>
+                    <li class="price">
+                      <div><span>52500</span>원</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <footer id="footer">
+        <div class="customer-service-wrapper">
+          <span class="customer-service-number">
+            <div class="cs-title">고객상담</div>
+            <div class="cs-number">070-8185-9807</div>
+          </span>
+          <span class="customer-service-time">
+            <div>평일 10:00 ~ 18:00</div>
+            <div>점심시간 12:30 ~ 13:30</div>
+          </span>
+        </div>
+        <div>
+          <div class="company-info">
+            (주)영일프레시젼<br />
+            대표이사 : 주동욱 CEO<br />
+            개인정보보호 : 김도영 CPO <br />
+            사업자 등록번호 : 119-81-60562<br />
+            통신판매업 신고 : 제 2019-서울금천-0766호<br />
+            서울특별시 금천구 범안로 9길 23<br />
+          </div>
+        </div>
+        <div class="right-info">
+          <p>All right reserved © Youngyiel Precision Co., Ltd.</p>
+        </div>
+      </footer>
+      <div class="go-top">
+        <a href="#">
+          <img src="icons/go-top.png" />
+        </a>
+      </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      console.log('hello');
+      //var Swiper = window.Swiper;
+      var swiper_1 = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 4,
+        paginationClickable: true,
+        spaceBetween: 0,
+        freeMode: true,
+        pagination: false
+      });
+
+      $('.tabs > li > a').on('click', function(e) {
+        $(this)
+          .parent()
+          .addClass('active')
+          .siblings()
+          .removeClass('active');
+        //var tabIdx = $(this)
+        //.parent()
+        //.index();
+        // swiper_2.slideTo(tabIdx + 1, 300);
+        e.preventDefault();
+      });
+
+      var tabLen = $('.tabs > li').length;
+
+      /* 2016-05-13 수정 */
+      /*
+      var swiper_2 = new Swiper('.swiper-container-2', {
+        autoHeight: true,
+        slidesPerView: 1,
+        spaceBetween: 0,
+        pagination: false,
+        loop: true,
+        onInit: function(swiper) {},
+        onSlideChangeStart: function(swiper) {
+          var idx = swiper.activeIndex - 1;
+          if (idx < 0) {
+            idx = tabLen - 1;
+          } else if (idx == tabLen) {
+            idx = 0;
+          }
+          $('.tabs > li')
+            .removeClass('active')
+            .eq(idx)
+            .addClass('active');
+          if (idx < tabLen) {
+            swiper_1.slideTo(idx - 1, 300);
+          }
+        }
+      });*/
+      var swiper2 = new Swiper('.swiper-container-2', {
+        pagination: {
+          el: '.swiper-pagination'
+        },
+        loop: true
+      });
+      /* //2016-05-13 수정 */
+    </script>
+  </body>
+</html>

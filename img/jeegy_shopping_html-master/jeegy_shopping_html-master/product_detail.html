@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>상품상세페이지</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="./swiper.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="top">
+      <header class="page-top">
+        <div class="header-wrapper">
+          <div class="header-hamburger">
+            <img src="icons/hamburger.png" />
+          </div>
+          <div class="header-title">
+            <img src="icons/j-shop.png" />
+          </div>
+        </div>
+      </header>
+      <!-- 카테고리 -->
+      <div class="detail-nav-container">
+        <div class="detail-nav-wrapper">
+          <div class="detail-nav-prev-ico">
+            <img src="./icons/ico-header-prv.png" />
+          </div>
+          <div class="detail-nav-title middle-nav-title">
+            <p>블랙 자전거 조끼 바람막이</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-container">
+      <div class="swiper-container-5">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="detail-product-img">
+              <img src="images/slimg-01.png" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="detail-product-img">
+              <img src="images/ex2.jpg" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="detail-product-img">
+              <img src="images/ex3.jpg" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="detail-product-img">
+              <img src="images/ex3.jpg" />
+            </div>
+          </div>
+        </div>
+        <!-- Add Pagination-->
+        <div>
+          <div class="swiper-pagination detail-pagination"></div>
+        </div>
+        <div class="detail-product-name">
+          <div>
+            하이만 PLV-01 블랙 자전거조끼 바람막이자켓
+          </div>
+        </div>
+      </div>
+      <section class="order-section">
+        <div class="order-section-wrapper">
+          <div class="order-section-cont">가격</div>
+          <div class="order-section-price">48,600 원</div>
+        </div>
+        <div class="order-section-wrapper">
+          <div class="order-section-cont">
+            <span>배송료</span>
+            <span style="color: #666666">(40,000원 이상 무료배송)</span>
+          </div>
+          <div class="order-section-price">0 원</div>
+        </div>
+        <div class="order-section-wrapper total-price-wrapper">
+          <div class="order-section-cont">합계금액</div>
+          <div class="order-section-price">48,600 원</div>
+        </div>
+        <div class="order-button-wrapper">
+          <button class="order-button">
+            <div class="order-bag-ico-wrapper">
+              <img src="icons/ico-bag.png" />
+            </div>
+            <div class="order-button-txt">
+              <div>주문하기</div>
+            </div>
+          </button>
+        </div>
+      </section>
+      <nav style="border-bottom: 1px solid #f0f0f0;">
+        <ul class="tabs" style="display: flex;">
+          <li
+            class="product-info-tab active"
+            style="cursor: pointer;"
+            onclick="changeTabContent(this)"
+          >
+            <a>제품정보</a>
+          </li>
+          <li
+            class="notice-tab"
+            style="cursor: pointer;"
+            onclick="changeTabContent(this)"
+          >
+            <a>유의사항</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- 제품 정보-->
+      <!-- 유의 사항-->
+      <div class="tab-container">
+        <div class="product-info-container" style="padding: 10px 16px;">
+          <img src="images/long_product_img.jpg" style="width:100%;" />
+        </div>
+        <div class="notice-container" style="display: none;">
+          <div class="notice-title">
+            <span>배송안내</span>
+          </div>
+          <div class="table-wrapper">
+            <table>
+              <tr>
+                <th>배송방법</th>
+                <td>택배 (CJ 대한통운)</td>
+              </tr>
+              <tr>
+                <th>배송기간</th>
+                <td>
+                  평균1~2 일 (금요일 오후 3시 이후 주문건은 토/ 일요일 제외)
+                </td>
+              </tr>
+              <tr class="last-tr">
+                <th>
+                  배송비
+                </th>
+                <td>편도 2,500 원 (30,000 원 이상시 무료배송)</td>
+              </tr>
+            </table>
+          </div>
+          <div class="notice-title">
+            <span>반품 및 교환 안내</span>
+          </div>
+          <div class="table-wrapper">
+            <table>
+              <tr>
+                <th>반품 및 교환</th>
+                <td>
+                  판매자와 유선상으로 협의 후 발송해 주시기 바랍니다.
+                </td>
+              </tr>
+              <tr>
+                <th>반품 배송비</th>
+                <td>편도 2,500 원 (최초 배송비 무료의 경우 5,000원 부과)</td>
+              </tr>
+              <tr>
+                <th>
+                  교환 배송비
+                </th>
+                <td>5,000 원</td>
+              </tr>
+              <tr>
+                <th>
+                  보내실 곳
+                </th>
+                <td>
+                  서울시 금천구 범안로 9길 23 <br />
+                  영일프레시젼 ICT 사업부 마케팅팀
+                </td>
+              </tr>
+              <tr class="last-tr">
+                <th>
+                  환불기간
+                </th>
+                <td>카드사 취소 요청 후 7일 이내</td>
+              </tr>
+            </table>
+          </div>
+          <div class="notice-title">
+            <span>고객센터 문의 안내</span>
+          </div>
+          <div class="table-wrapper">
+            <table>
+              <tr>
+                <th style="width: 87px;">상담시간</th>
+                <td>10 : 00 ~ 18 : 00</td>
+              </tr>
+              <tr class="last-tr">
+                <th>점심시간</th>
+                <td>
+                  12 : 30 ~ 13 : 30
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <footer id="footer">
+        <div class="customer-service-wrapper">
+          <span class="customer-service-number">
+            <div class="cs-title">고객상담</div>
+            <div class="cs-number">070-8185-9807</div>
+          </span>
+          <span class="customer-service-time">
+            <div>평일 10:00 ~ 18:00</div>
+            <div>점심시간 12:30 ~ 13:30</div>
+          </span>
+        </div>
+        <div>
+          <div class="company-info">
+            (주)영일프레시젼<br />
+            대표이사 : 주동욱 CEO<br />
+            개인정보보호 : 김도영 CPO <br />
+            사업자 등록번호 : 119-81-60562<br />
+            통신판매업 신고 : 제 2019-서울금천-0766호<br />
+            서울특별시 금천구 범안로 9길 23<br />
+          </div>
+        </div>
+        <div class="right-info">
+          <p>All right reserved © Youngyiel Precision Co., Ltd.</p>
+        </div>
+      </footer>
+      <div class="go-top">
+        <a href="#">
+          <img src="icons/go-top.png" />
+        </a>
+      </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper5 = new Swiper('.swiper-container-5', {
+        pagination: {
+          el: '.swiper-pagination'
+        },
+        loop: true
+      });
+
+      $('.tabs > li > a').on('click', function(e) {
+        $(this)
+          .parent()
+          .addClass('active')
+          .siblings()
+          .removeClass('active');
+        //var tabIdx = $(this)
+        //.parent()
+        //.index();
+        // swiper_2.slideTo(tabIdx + 1, 300);
+        e.preventDefault();
+      });
+    </script>
+    <script>
+      function changeTabContent(e) {
+        const notice = document.querySelector('.notice-container');
+        const productContent = document.querySelector(
+          '.product-info-container'
+        );
+
+        if (e.classList.contains('product-info-tab')) {
+          notice.style.display = 'none';
+          productContent.style.display = 'block';
+        }
+
+        if (e.classList.contains('notice-tab')) {
+          productContent.style.display = 'none';
+          notice.style.display = 'block';
+        }
+      }
+    </script>
+  </body>
+</html>
